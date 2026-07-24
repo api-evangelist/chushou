@@ -1,7 +1,25 @@
 aid: chushou
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/chushou.png
 name: chushou
-description: chushou is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Chushou (触手TV / 触手直播) was a China-based mobile game live-streaming
+  platform, at one point among the largest mobile-focused game streaming services in
+  China, letting players broadcast and watch mobile gameplay. It was backed by Qiming
+  Venture Partners and Tencent and is surfaced here as a portfolio lead. As of this
+  enrichment pass the company's public web presence at chushou.tv is unreachable (the
+  server returns empty replies) and it exposes no documented developer API, SDK, or
+  portal, so this profile remains an inactive/defunct lead with no live API surface to
+  enrich beyond DNS/TLS-level signals.
 url: https://raw.githubusercontent.com/api-evangelist/chushou/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Live Streaming
+- Gaming
+- Video
+- Mobile
+- Media
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +45,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/chushou-domain-security.yml
 - type: Website
   url: https://chushou.tv
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
